@@ -11,6 +11,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'clearance'
+gem 'bootstrap-sass', '~> 3.3.6'
+
 group :test do
   gem 'capybara'
   gem 'capybara-webkit'
@@ -18,9 +21,12 @@ group :test do
   gem 'rspec-rails'
 end
 
+group :development do
+  gem 'web-console', '~> 2.0'
+end
+
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
 end
 
